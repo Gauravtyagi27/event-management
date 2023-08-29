@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Signup</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  .chart {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+  }
+  .back {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .input-group {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"], input[type="email"], input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .signup-btn {
+    margin-top: 20px;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="chart">Chart</div>
+  <div class="back">Back</div>
+</div>
+<div class="container">
+  <h2>Create an Account</h2>
+  <div class="input-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="input-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="input-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button class="signup-btn">Sign Up</button>
+</div>
+</body>
+</html>
